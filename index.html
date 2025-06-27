@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Food Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('m1.avif') no-repeat center center fixed;
+      background-size: cover;
+  color: #fff;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    header {
+      background-color: #ffb563;
+      padding: 15px;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .nav-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 22px;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+    nav a {
+      font-size: 14px;
+      color: #ffffff;
+    }
+    nav a:hover {
+      color: #a3c644;
+    }
+    .header-icons {
+      display: flex;
+      gap: 15px;
+      color: #ffffff;
+      font-size: 18px;
+    }
+    .header-icons i:hover {
+      color: #a3c644;
+    }
+    .hero {
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 26px;
+      margin: 6px 0;
+      color: #fff;
+    }
+    .hero h2 {
+      font-size: 20px;
+      margin: 6px 0;
+      color: #fff;
+    }
+    .hero p {
+      font-size: 12px;
+      color: #ffffff;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .featured-articles {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .article-card {
+      background-color: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 570px;
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .article-image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 350px;
+    }
+    .article-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .article-date {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.6);
+      padding: 3px 8px;
+      font-size: 10px;
+      border-radius: 5px;
+    }
+    .article-content {
+      padding: 15px;
+      color: #fff;
+    }
+    .article-author {
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 10px;
+      padding: 2px 8px;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+    .article-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0 0 6px 0;
+    }
+    .article-desc {
+      font-size: 10px;
+      color: #ccc;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-container input[type="text"] {
+      padding: 6px 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-left: 10px;
+    }
+
+    .search-container i {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .featured-articles {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header role="banner">
+    <div class="header-inner">
+      <div class="nav-top">
+        <div class="logo">FoodBlog</div>
+        <nav role="navigation">
+        </nav>
+        <div class="header-icons">
+          <div class="search-container">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Cari di sini...">
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="hero" role="region">
+        <h1>Selamat datang di Spoonfull Of Culinary</h1>
+        <h3>Spoonfull Of Culinary  hadir untuk memperkaya pengalaman kuliner Anda, dari yang sederhana hingga yang istimewa — di mana pun, kapan pun.
+Temukan rasa favorit Anda di sini  dari yang klasik sampai yang kekinian.</h3>
+        
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="featured-articles" aria-label="Featured articles">
+
+      <article class="article-card" tabindex="0">
+        <a href="BASO.html" class="article-image-wrapper">
+          <img src="IMG_6918 (2).jpg" alt="Pizza image"/>
+          <div class="article-date">26 Juni, 2025</div>
+        </a>
+        <div class="article-content">
+          <div class="article-author">Rp.20.000</div>
+          <h3 class="article-title">REVIEW MIE AYAM 3 DARA - DEWI SARTIKA</h3>
+          <p class="article-desc">
+            REVIEW MIE AYAM 3 DARA - DEWI SARTIKA
+Mie Ayam 3 Dara menyajikan semangkuk mie yamin dengan  tampilan klasik namun menggoda. 
+Dalam satu mangkok mie yamin terdapat mie kuning yang pipih dan kenyal dengan kematangan yang sempurna, 
+topping ayam cincang keap yang gurih dan sedikit manis, serta ditambahkan dengan pangsit rebus yang berukuran cukup 
+besar dan lembut serta sayuran hijau yang segar dan kuah bening yang disajikan terpisah, Kuah bening ini memiliki rasa
+kaldu yang ringan dan daun bawang yang segar. 
+
+          </p>
+          <div class="article-rating" aria-label="Rating">
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star-half-alt" style="color: #ffc107;"></i>
+    </div>
+        </div>
+      </article>
+
+      <article class="article-card" tabindex="0">
+        <a href="mieayam.html" class="article-image-wrapper">
+          <img src="IMG_2458.JPG" alt="Butter chicken image"/>
+          <div class="article-date">26 Juni, 2025</div>
+        </a>
+        <div class="article-content">
+          <div class="article-author">Rp.30.000</div>
+          <h3 class="article-title">Review - Bakso Raket </h3>
+          <p class="article-desc">
+            
+Review - Bakso Raket -
+Seporsi Bakso Raket Panggang Keju yang berisikan beberapa condiment terpisah yang saling melengkapi. 
+di dalam seporsi makanan ini, kamu akan mendapatkan mie lebar yang dibuat sendiri, 
+kuah bakso yang yang berkaldu dan gurih , bakso panggang dengan topping keju yang melimpah, 
+dan sayuran selada tomat yang melengkapi seporsi menu ini. 
+
+          </p>
+          <div class="article-rating" aria-label="Rating">
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+    </div>
+        </div>
+      </article>
+
+      <article class="article-card" tabindex="0">
+        <a href="basokeju.html" class="article-image-wrapper">
+          <img src="IMG_2467.JPG" alt="Butter chicken image"/>
+          <div class="article-date">26 Juni, 2025</div>
+        </a>
+        <div class="article-content">
+          <div class="article-author">Rp.35.000</div>
+          <h3 class="article-title">REVIEW - BAKSO AJO </h3>
+          <p class="article-desc">
+            
+Satu mangkok bakso ajo yang terdiri dari berbagai condiment yang lezat. Dalam satu porsi kamu akan mendapat bakso urat daging sapi yang lembut dan lezat, serta tambahan topping tahu putih yang lembut dan pangsit goreng yang renyah, mie kuning serta disajikan dengan kuah bening yang ringan dan beraroma kaldu yang sangat kuat.
+
+          </p>
+          <div class="article-rating" aria-label="Rating">
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+      <i class="fas fa-star" style="color: #ffc107;"></i>
+    </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+<footer style="background-color:#ffb563; padding:20px; text-align:center;">
+  <p>Alamat kami: Jl. Mayjen Sutoyo No.76, RW.11, Cililitan, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13640</p>
+  <a href="https://maps.app.goo.gl/NAptmp924zvBMRjg7" target="_blank">
+    <i class="fas fa-map-marker-alt"></i> Lihat di Google Maps
+  </a>
+</footer>
+</body>
+</html>
